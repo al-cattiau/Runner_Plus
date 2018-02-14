@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF2A8C0E203430DE008D0A26 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AF2A8C0D203430DE008D0A26 /* Podfile */; };
 		AFB684C1202C8CBE00800891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB684C0202C8CBE00800891 /* AppDelegate.swift */; };
 		AFB684C3202C8CBE00800891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB684C2202C8CBE00800891 /* ViewController.swift */; };
 		AFB684C6202C8CBE00800891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB684C4202C8CBE00800891 /* Main.storyboard */; };
 		AFB684C8202C8CBE00800891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB684C7202C8CBE00800891 /* Assets.xcassets */; };
 		AFB684CB202C8CBE00800891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB684C9202C8CBE00800891 /* LaunchScreen.storyboard */; };
+		FAF5F1F1532462017119DD52 /* Pods_Runner_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99658F40EC2EB0C31D0EB0CA /* Pods_Runner_Plus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F05A0060CDA66E6758F7F90 /* Pods-Runner_Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner_Plus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Runner_Plus/Pods-Runner_Plus.release.xcconfig"; sourceTree = "<group>"; };
+		3A6691442890CCF6169D8E48 /* Pods-Runner_Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner_Plus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Runner_Plus/Pods-Runner_Plus.debug.xcconfig"; sourceTree = "<group>"; };
+		99658F40EC2EB0C31D0EB0CA /* Pods_Runner_Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner_Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2A8C0D203430DE008D0A26 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		AFB684BD202C8CBE00800891 /* Runner_Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner_Plus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB684C0202C8CBE00800891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB684C2202C8CBE00800891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF5F1F1532462017119DD52 /* Pods_Runner_Plus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60AFD4F892277FA6584E98FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A6691442890CCF6169D8E48 /* Pods-Runner_Plus.debug.xcconfig */,
+				1F05A0060CDA66E6758F7F90 /* Pods-Runner_Plus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80F3822AD93C976784AFBAA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99658F40EC2EB0C31D0EB0CA /* Pods_Runner_Plus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFB684B4202C8CBE00800891 = {
 			isa = PBXGroup;
 			children = (
 				AFB684BF202C8CBE00800891 /* Runner_Plus */,
 				AFB684BE202C8CBE00800891 /* Products */,
+				AF2A8C0D203430DE008D0A26 /* Podfile */,
+				60AFD4F892277FA6584E98FD /* Pods */,
+				80F3822AD93C976784AFBAA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +81,54 @@
 		AFB684BF202C8CBE00800891 /* Runner_Plus */ = {
 			isa = PBXGroup;
 			children = (
-				AFB684C0202C8CBE00800891 /* AppDelegate.swift */,
-				AFB684C2202C8CBE00800891 /* ViewController.swift */,
-				AFB684C4202C8CBE00800891 /* Main.storyboard */,
-				AFB684C7202C8CBE00800891 /* Assets.xcassets */,
-				AFB684C9202C8CBE00800891 /* LaunchScreen.storyboard */,
-				AFB684CC202C8CBE00800891 /* Info.plist */,
+				AFB684D2202C8CD900800891 /* Delegates */,
+				AFB684D5202C8D2600800891 /* ViewControllers */,
+				AFB684D3202C8CF100800891 /* Resources */,
+				AFB684D4202C8D0F00800891 /* Storyboards */,
+				AFB684D6202C8D4000800891 /* SupportingFiles */,
 			);
 			path = Runner_Plus;
+			sourceTree = "<group>";
+		};
+		AFB684D2202C8CD900800891 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AFB684C0202C8CBE00800891 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AFB684D3202C8CF100800891 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFB684C7202C8CBE00800891 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFB684D4202C8D0F00800891 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AFB684C9202C8CBE00800891 /* LaunchScreen.storyboard */,
+				AFB684C4202C8CBE00800891 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AFB684D5202C8D2600800891 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFB684C2202C8CBE00800891 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AFB684D6202C8D4000800891 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AFB684CC202C8CBE00800891 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFB684CF202C8CBE00800891 /* Build configuration list for PBXNativeTarget "Runner_Plus" */;
 			buildPhases = (
+				0D6C7AA9F7C27B14DAE4497C /* [CP] Check Pods Manifest.lock */,
 				AFB684B9202C8CBE00800891 /* Sources */,
 				AFB684BA202C8CBE00800891 /* Frameworks */,
 				AFB684BB202C8CBE00800891 /* Resources */,
+				CBCCE31AA27D300DD13E098A /* [CP] Embed Pods Frameworks */,
+				D6E990FBB29AA299D3023F04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +195,72 @@
 			files = (
 				AFB684CB202C8CBE00800891 /* LaunchScreen.storyboard in Resources */,
 				AFB684C8202C8CBE00800891 /* Assets.xcassets in Resources */,
+				AF2A8C0E203430DE008D0A26 /* Podfile in Resources */,
 				AFB684C6202C8CBE00800891 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D6C7AA9F7C27B14DAE4497C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner_Plus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBCCE31AA27D300DD13E098A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Runner_Plus/Pods-Runner_Plus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Runner_Plus/Pods-Runner_Plus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E990FBB29AA299D3023F04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Runner_Plus/Pods-Runner_Plus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFB684B9202C8CBE00800891 /* Sources */ = {
@@ -272,10 +403,12 @@
 		};
 		AFB684D0202C8CBE00800891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6691442890CCF6169D8E48 /* Pods-Runner_Plus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Runner_Plus/Info.plist;
+				DEVELOPMENT_TEAM = V3A99USA23;
+				INFOPLIST_FILE = Runner_Plus/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Life-optimizer.Runner-Plus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +419,12 @@
 		};
 		AFB684D1202C8CBE00800891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F05A0060CDA66E6758F7F90 /* Pods-Runner_Plus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Runner_Plus/Info.plist;
+				DEVELOPMENT_TEAM = V3A99USA23;
+				INFOPLIST_FILE = Runner_Plus/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Life-optimizer.Runner-Plus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
