@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AF2A8C0E203430DE008D0A26 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AF2A8C0D203430DE008D0A26 /* Podfile */; };
 		AF2A8C1320343CF9008D0A26 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A8C1220343CF9008D0A26 /* Configuration.swift */; };
+		AF2A8C1820344C28008D0A26 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A8C1720344C28008D0A26 /* Record.swift */; };
 		AFB684C1202C8CBE00800891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB684C0202C8CBE00800891 /* AppDelegate.swift */; };
 		AFB684C3202C8CBE00800891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB684C2202C8CBE00800891 /* ViewController.swift */; };
 		AFB684C6202C8CBE00800891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB684C4202C8CBE00800891 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		99658F40EC2EB0C31D0EB0CA /* Pods_Runner_Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner_Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2A8C0D203430DE008D0A26 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		AF2A8C1220343CF9008D0A26 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		AF2A8C1720344C28008D0A26 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		AFB684BD202C8CBE00800891 /* Runner_Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner_Plus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB684C0202C8CBE00800891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB684C2202C8CBE00800891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		AF2A8C1420343D59008D0A26 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AF2A8C1720344C28008D0A26 /* Record.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			files = (
 				AF2A8C1320343CF9008D0A26 /* Configuration.swift in Sources */,
 				AFB684C3202C8CBE00800891 /* ViewController.swift in Sources */,
+				AF2A8C1820344C28008D0A26 /* Record.swift in Sources */,
 				AFB684C1202C8CBE00800891 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
