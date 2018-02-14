@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF2A8C0E203430DE008D0A26 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AF2A8C0D203430DE008D0A26 /* Podfile */; };
+		AF2A8C1320343CF9008D0A26 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A8C1220343CF9008D0A26 /* Configuration.swift */; };
 		AFB684C1202C8CBE00800891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB684C0202C8CBE00800891 /* AppDelegate.swift */; };
 		AFB684C3202C8CBE00800891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB684C2202C8CBE00800891 /* ViewController.swift */; };
 		AFB684C6202C8CBE00800891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB684C4202C8CBE00800891 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		3A6691442890CCF6169D8E48 /* Pods-Runner_Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner_Plus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Runner_Plus/Pods-Runner_Plus.debug.xcconfig"; sourceTree = "<group>"; };
 		99658F40EC2EB0C31D0EB0CA /* Pods_Runner_Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner_Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2A8C0D203430DE008D0A26 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		AF2A8C1220343CF9008D0A26 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		AFB684BD202C8CBE00800891 /* Runner_Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner_Plus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB684C0202C8CBE00800891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB684C2202C8CBE00800891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF2A8C1120343CD9008D0A26 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				AF2A8C1220343CF9008D0A26 /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		AF2A8C1420343D59008D0A26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AFB684B4202C8CBE00800891 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +98,8 @@
 		AFB684BF202C8CBE00800891 /* Runner_Plus */ = {
 			isa = PBXGroup;
 			children = (
+				AF2A8C1420343D59008D0A26 /* Models */,
+				AF2A8C1120343CD9008D0A26 /* Configuration */,
 				AFB684D2202C8CD900800891 /* Delegates */,
 				AFB684D5202C8D2600800891 /* ViewControllers */,
 				AFB684D3202C8CF100800891 /* Resources */,
@@ -267,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2A8C1320343CF9008D0A26 /* Configuration.swift in Sources */,
 				AFB684C3202C8CBE00800891 /* ViewController.swift in Sources */,
 				AFB684C1202C8CBE00800891 /* AppDelegate.swift in Sources */,
 			);
