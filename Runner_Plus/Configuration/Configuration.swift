@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+
+enum RunModeSegment: Int {
+    case basic = 0
+    case timer = 1
+    case distance = 2
+}
+
+
+enum RunModeShortCut: String {
+    case basic = "basic"
+    case timer = "timer"
+    case distance = "distance"
+}
+

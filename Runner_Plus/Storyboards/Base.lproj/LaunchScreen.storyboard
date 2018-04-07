@@ -1,43 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SnellRoundhand.ttc">
+            <string>SnellRoundhand</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="66K-Ui-LNo">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen-background" translatesAutoresizingMaskIntoConstraints="NO" id="Eq4-83-iLj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Puma" translatesAutoresizingMaskIntoConstraints="NO" id="7jz-LR-m7s">
+                                <rect key="frame" x="29.666666666666657" y="244" width="316" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7jz-LR-m7s" secondAttribute="height" multiplier="316:135" id="I4G-Ym-WNk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjw-Ev-y3i">
+                                <rect key="frame" x="8" y="439" width="359" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLu-r3-lkg">
+                                <rect key="frame" x="155.66666666666666" y="482" width="64" height="45.666666666666629"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="36"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="66K-Ui-LNo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1gR-9n-xBc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="66K-Ui-LNo" secondAttribute="bottom" id="2QR-Sw-STL"/>
-                            <constraint firstItem="66K-Ui-LNo" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ijN-pH-qWY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="66K-Ui-LNo" secondAttribute="trailing" id="p4I-QY-Th2"/>
+                            <constraint firstItem="Pjw-Ev-y3i" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="32m-Z4-6Pn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pjw-Ev-y3i" secondAttribute="trailing" constant="8" id="3oX-sq-yae"/>
+                            <constraint firstAttribute="bottom" secondItem="Eq4-83-iLj" secondAttribute="bottom" id="4UT-kx-gJb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7jz-LR-m7s" secondAttribute="trailing" constant="29.329999999999998" id="75Z-98-D1n"/>
+                            <constraint firstItem="Eq4-83-iLj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MRm-BA-waz"/>
+                            <constraint firstItem="Pjw-Ev-y3i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="UzV-JD-vxT"/>
+                            <constraint firstItem="Pjw-Ev-y3i" firstAttribute="top" secondItem="7jz-LR-m7s" secondAttribute="bottom" constant="60" id="epQ-2f-Xr0"/>
+                            <constraint firstItem="vLu-r3-lkg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hRq-ao-wkA"/>
+                            <constraint firstItem="Eq4-83-iLj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lHU-R7-HKv"/>
+                            <constraint firstItem="7jz-LR-m7s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29.670000000000002" id="leG-PX-hQL"/>
+                            <constraint firstItem="7jz-LR-m7s" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="o4q-Td-tHR"/>
+                            <constraint firstItem="7jz-LR-m7s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="sHe-gU-d80"/>
+                            <constraint firstItem="Eq4-83-iLj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tjS-p4-Obp"/>
+                            <constraint firstItem="vLu-r3-lkg" firstAttribute="top" secondItem="Pjw-Ev-y3i" secondAttribute="bottom" id="ziC-25-UmN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="375" height="667"/>
+        <image name="Puma" width="316" height="135"/>
+        <image name="launchscreen-background" width="375" height="667"/>
     </resources>
 </document>
