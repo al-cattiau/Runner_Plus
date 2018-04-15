@@ -41,13 +41,17 @@ class RunningEntryViewController: UIViewController, CLLocationManagerDelegate {
             case .timer:
                 self.configure.isHidden = false
                 self.unitText.isHidden = false
-                _ = self.durationSetting.asObservable().map{ $0.clipTopOneToString() }.bind(to: self.configure.rx.title(for: .normal))
+                _ = self.durationSetting.asObservable().map{
+                    $0.clipTopOneToString()
+                }.bind(to: self.configure.rx.title(for: .normal))
                 self.unitText.text = "分钟"
                 
             case .distance:
                 self.configure.isHidden = false
                 self.unitText.isHidden = false
-                _ = self.distanceSetting.asObservable().map{ $0.clipTopOneToString() }.bind(to: self.configure.rx.title(for: .normal))
+                _ = self.distanceSetting.asObservable().map{
+                    $0.clipTopOneToString()
+                }.bind(to: self.configure.rx.title(for: .normal))
                 self.unitText.text = "公里"
             }
         })

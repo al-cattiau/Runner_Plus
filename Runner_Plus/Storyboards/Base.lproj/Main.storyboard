@@ -201,7 +201,7 @@
             </objects>
             <point key="canvasLocation" x="3566" y="916"/>
         </scene>
-        <!--Running Record View Controller-->
+        <!--View Controller-->
         <scene sceneID="ANl-Et-MBM">
             <objects>
                 <viewController storyboardIdentifier="recordVC" id="hO8-M2-qqF" customClass="RunningRecordViewController" customModule="Runner_Plus" customModuleProvider="target" sceneMemberID="viewController">
@@ -215,6 +215,9 @@
                                     <constraint firstAttribute="width" constant="68" id="5X7-F4-gHj"/>
                                     <constraint firstAttribute="height" constant="30" id="HXP-ut-jg5"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYJ-Gx-IFb">
                                 <rect key="frame" x="16" y="20" width="20" height="30"/>
@@ -257,6 +260,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <color key="textColor" red="0.77296322584152222" green="0.20785915851593018" blue="0.28000342845916748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorContrast">
+                                        <color key="value" red="0.77296322579999999" green="0.2078591585" blue="0.28000342849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分：秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-Mn-H8P">
                                 <rect key="frame" x="0.0" y="150" width="375" height="50"/>
@@ -343,11 +355,19 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="7Zs-0A-xDG" firstAttribute="width" secondItem="JUg-HS-gCY" secondAttribute="width" id="Ayi-eh-sl2"/>
-                                    <constraint firstItem="gmE-pg-kAV" firstAttribute="width" secondItem="7Zs-0A-xDG" secondAttribute="width" id="KAr-vT-Amh"/>
-                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8l-ae-byF">
+                                <rect key="frame" x="156" y="428" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="Xjw-Nq-2Sg"/>
+                                </constraints>
+                                <state key="normal" title="夜间模式">
+                                    <color key="titleColor" red="0.78823529411764703" green="0.21176470588235294" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchAmbience:" destination="O75-b7-F0s" eventType="touchUpInside" id="Kfp-nB-7jV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -357,12 +377,14 @@
                             <constraint firstItem="Bov-3a-FCe" firstAttribute="centerX" secondItem="mju-M2-ERg" secondAttribute="centerX" id="HN5-5Q-dfw"/>
                             <constraint firstItem="vKa-xA-tkK" firstAttribute="centerX" secondItem="mju-M2-ERg" secondAttribute="centerX" id="Jex-fg-COW"/>
                             <constraint firstItem="9o9-Mn-H8P" firstAttribute="leading" secondItem="iVK-Zo-8BR" secondAttribute="leading" id="LxG-Yb-b2B"/>
+                            <constraint firstItem="C8l-ae-byF" firstAttribute="top" secondItem="vKa-xA-tkK" secondAttribute="bottom" constant="130" id="Mu0-Bp-dKZ"/>
                             <constraint firstItem="EYJ-Gx-IFb" firstAttribute="leading" secondItem="iVK-Zo-8BR" secondAttribute="leading" constant="16" id="VAX-LI-d00"/>
                             <constraint firstItem="Bov-3a-FCe" firstAttribute="top" secondItem="iVK-Zo-8BR" secondAttribute="top" id="Xeq-yc-IjB"/>
                             <constraint firstItem="iVK-Zo-8BR" firstAttribute="trailing" secondItem="vKa-xA-tkK" secondAttribute="trailing" constant="20" id="bOe-SB-bzw"/>
                             <constraint firstItem="9o9-Mn-H8P" firstAttribute="top" secondItem="LYo-Ao-HLa" secondAttribute="bottom" id="bb8-v2-zBE"/>
                             <constraint firstItem="Gih-Ld-uap" firstAttribute="centerX" secondItem="mju-M2-ERg" secondAttribute="centerX" id="c5N-kW-raK"/>
                             <constraint firstItem="evw-eV-Zjh" firstAttribute="top" secondItem="iVK-Zo-8BR" secondAttribute="top" id="emP-Wl-keg"/>
+                            <constraint firstItem="C8l-ae-byF" firstAttribute="centerX" secondItem="iVK-Zo-8BR" secondAttribute="centerX" id="fBK-2y-MtZ"/>
                             <constraint firstItem="vKa-xA-tkK" firstAttribute="leading" secondItem="iVK-Zo-8BR" secondAttribute="leading" constant="20" id="g6X-V9-okb"/>
                             <constraint firstItem="vKa-xA-tkK" firstAttribute="top" secondItem="9o9-Mn-H8P" secondAttribute="bottom" constant="24" id="gWK-wL-3NW"/>
                             <constraint firstItem="LYo-Ao-HLa" firstAttribute="trailing" secondItem="iVK-Zo-8BR" secondAttribute="trailing" id="hjX-9T-R4M"/>
@@ -371,6 +393,12 @@
                             <constraint firstItem="EYJ-Gx-IFb" firstAttribute="top" secondItem="iVK-Zo-8BR" secondAttribute="top" id="yL7-pH-T00"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iVK-Zo-8BR"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="invertColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="calorieLabel" destination="1Mh-Dm-HIJ" id="1N8-sJ-rDk"/>
@@ -385,6 +413,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptg-TQ-Xrx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="O75-b7-F0s" customClass="AmbienceObject" customModule="Ambience">
+                    <connections>
+                        <outlet property="viewController" destination="hO8-M2-qqF" id="HVp-qo-dkX"/>
+                    </connections>
+                </customObject>
                 <view contentMode="scaleToFill" id="NW5-9w-IFc">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

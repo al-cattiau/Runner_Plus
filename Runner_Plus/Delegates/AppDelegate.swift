@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Ambience
+   
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        _ = Ambience.shared
+        
         // Override point for customization after application launch.
         if UserDefaults.getReminderRepeat() == false{
             if let date = UserDefaults.getReminderDate() {

@@ -11,4 +11,5 @@ target 'Runner_Plus' do
   pod 'RxCocoa',    '~> 4.0'
   pod 'RAMAnimatedTabBarController'
   pod 'RxRealm'
+  pod 'Ambience'
 end

@@ -213,7 +213,11 @@ class RunningRecordViewController: UIViewController, CLLocationManagerDelegate {
         let alert = UIAlertController(title: "结束运动？", message: "系统将为你记录此次跑步的情况。", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { (action) in
-            self.saveDataBeforeComplete( completion: { self.dismiss(animated: true, completion: nil)} )
+            self.saveDataBeforeComplete( completion: { self.dismiss(animated: true, completion: {
+                self.locationManager.stopUpdatingLocation()
+                self.timer.invalidate()
+                self.bag = nil
+            })})
         }))
         
         alert.addAction(UIAlertAction(title: "我不想保存此次跑步记录", style: .destructive, handler: { (action) in
@@ -271,7 +275,12 @@ class RunningRecordViewController: UIViewController, CLLocationManagerDelegate {
         if let device = AVCaptureDevice.default(for: AVMediaType.video) {
             do {
                 try device.lockForConfiguration()
-                device.torchMode = device.torchMode == .on ? .off : .on
+                if(device.torchMode == .on ){
+                    device.torchMode = .off
+                }else{
+                    device.torchMode = .on
+                }
+                
                 device.unlockForConfiguration()   
             } catch {
                 print("error")
