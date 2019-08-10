@@ -8,11 +8,9 @@
 
 
 
-项目预览：
+项目图片预览：
 
 ![count-down](./readme-src/count-down.png)
-
-
 
 ![night-mode](./readme-src/night-mode.png)
 
@@ -21,3 +19,8 @@
 ![target-complete](./readme-src/target-complete.png)
 
 ![setting-target](./readme-src/setting-target.png)
+
+
+项目视频介绍：
+
+![video-intro](./readme-src/video-intro.mp4)
