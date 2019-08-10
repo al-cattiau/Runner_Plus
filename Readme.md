@@ -8,19 +8,6 @@
 
 
 
-项目图片预览：
+项目预览：
 
-![count-down](./readme-src/count-down.png)
-
-![night-mode](./readme-src/night-mode.png)
-
-![trace-track](./readme-src/trace-track.png)
-
-![target-complete](./readme-src/target-complete.png)
-
-![setting-target](./readme-src/setting-target.png)
-
-
-项目视频介绍：
-
-![video-intro](./readme-src/video-intro.mp4)
+![project-preview](./project-preview.png)
