@@ -6,8 +6,6 @@
 2. 安装最新版 macOS 以及 xCode，双击 Runner_Plus.xcworkspace 打开项目。
 3. 选择任意一个 iOS 11 以上的模拟器，点击编译运行，体验 App。
 
-
-
 项目预览：
 
 ![project-preview](./project-preview.png)
