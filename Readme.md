@@ -7,7 +7,6 @@
 3. 选择任意一个 iOS 11 以上的模拟器，点击编译运行，体验 App。
 
 
-
 项目预览：
 
 ![project-preview](./project-preview.png)
